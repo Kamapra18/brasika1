@@ -12,6 +12,7 @@ const galleryImages = [
     "/galeri/no-ogoh.jpg", "/galeri/ogoh-2023.jpg", "/galeri/galeri12.jpg",
     "/galeri/ngayah5.jpg", "/galeri/galeri14.jpg", "/galeri/galeri3.jpg",
     "/galeri/ogoh-2018.jpg", "/galeri/ngayah7.jpeg", "/galeri/ngayah8.jpeg",
+    "/galeri/alit.jpeg", "/galeri/ngayah9.jpeg", "/galeri/ngayah10.jpg",
 
     ];
 

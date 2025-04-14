@@ -29,7 +29,7 @@ const programs = [
         description: "Membuat Sekee Gong STT bernama Pematuh Agung."
     },
     {
-        image: "/galeri/ngayah3.jpg",
+        image: "/galeri/alit.jpeg",
         title: "Sekee Gong Alit",
         description: "Pembentukan Sekee Gong Alit-alit"
     },
