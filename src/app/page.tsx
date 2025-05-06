@@ -34,6 +34,7 @@ const programs = [
     title: "Pengerupukan",
     description: "Membuat Ogoh-ogoh dan fragment tari dalam pengerupukan."
 },
+
 ];
 
 export default function Home() {

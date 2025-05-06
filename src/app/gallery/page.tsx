@@ -2,7 +2,6 @@ import NavbarSection from "../components/navbar";
 import GallerrySection from "../components/galery";
 import Footer from "../components/footer";
 import WhatsAppFloatingButton from "../components/wa";
-
 const galleryImages = [
     "/program1.jpg", "/program3.jpg", "/galeri/galeri15.jpeg",
     "/galeri/galeri2.jpg", "/galeri/galeri11.jpeg", "/galeri/galeri.jpg",
