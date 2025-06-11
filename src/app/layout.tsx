@@ -18,11 +18,11 @@ export const metadata: Metadata = {
     template: "%s | Brasika Asta Dharma I",
   },
   description: "Website resmi Karang Taruna Brasika Asta Dharma I.",
-  metadataBase: new URL("https://brasika.vercel.app"), 
+  metadataBase: new URL("https://brasika1.vercel.app"), 
   openGraph: {
     title: "Brasika Asta Dharma I",
     description: "Website resmi Karang Taruna Brasika Asta Dharma I.",
-    url: "https://brasika.vercel.app",
+    url: "https://brasika1.vercel.app",
     siteName: "Brasika Asta Dharma I",
     images: [
       {
