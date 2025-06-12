@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     siteName: "Brasika Asta Dharma I",
     images: [
       {
-        url: "/logo-p.jpg", 
+        url: "/logo-p2.png", 
         width: 1200,
         height: 630,
         alt: "Brasika Asta Dharma I",
@@ -36,9 +36,9 @@ export const metadata: Metadata = {
     type: "website",
   },
   icons: {
-    icon: "/logo-p.jpg",
-    shortcut: "/logo-p.jpg",
-    apple: "/logo-p.jpg",
+    icon: "/logo-p2.png",
+    shortcut: "/logo-p2.png",
+    apple: "/logo-p2.png",
   },
   robots: {
     index: true,
