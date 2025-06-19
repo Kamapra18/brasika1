@@ -42,13 +42,9 @@ const GallerySection: React.FC<GallerySectionProps> = ({
 
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-10">
                     {images.map((src, index) => (
-                        <motion.div
+                        <div
                             key={index}
                             className="relative w-full h-64"
-                            initial={{ opacity: 0, scale: 0.95 }}
-                            whileInView={{ opacity: 1, scale: 1 }}
-                            transition={{ duration: 0.5, delay: index * 0.2 }}
-                            viewport={{ once: false, amount: 0.3 }}
                         >
                             <Image
                                 src={src}
@@ -57,7 +53,7 @@ const GallerySection: React.FC<GallerySectionProps> = ({
                                 objectFit="cover"
                                 className="rounded-lg shadow-md"
                             />
-                        </motion.div>
+                        </div>
                     ))}
                 </div>
 
