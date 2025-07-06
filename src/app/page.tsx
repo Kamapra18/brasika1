@@ -46,7 +46,7 @@ export default function Home() {
 
       <AboutSection
         title="Tentang Kami"
-        description="Sekaa Teruna Teruni Brasika Asta Dharma I adalah wadah bagi generasi muda Banjar untuk berkarya, melestarikan budaya, dan mempererat kebersamaan. Kami aktif dalam berbagai kegiatan, mulai dari Pelatihan Tari & Tabuh, Pementasan Seni, hingga Odalan dan Upacara Keagamaan sebagai bentuk pelestarian tradisi. Selain itu, kami juga berkontribusi dalam bidang sosial dengan mengadakan Bakti Sosial dan Aksi Donor Darah secara rutin. Dengan semangat menyama braya, kami berkomitmen membangun generasi yang kreatif, peduli, dan berbudaya. 💙 Bersatu, Berkarya, Berbudaya! 💙"
+        description="Sekaa Teruna Teruni Brasika Asta Dharma I adalah wadah bagi generasi muda Banjar untuk berkarya, melestarikan budaya, dan mempererat kebersamaan. Kami aktif dalam berbagai kegiatan, mulai dari Pelatihan Tari & Tabuh, Pementasan Seni, hingga Odalan dan Upacara Keagamaan sebagai bentuk pelestarian tradisi. Selain itu, kami juga berkontribusi dalam bidang sosial dengan mengadakan Bakti Sosial. Dengan semangat menyama braya, kami berkomitmen membangun generasi yang kreatif, peduli, dan berbudaya. 💙 Bersatu, Berkarya, Berbudaya! 💙"
       />
       <ProgramsPage programs={programs}/>
       <GallerrySection 
