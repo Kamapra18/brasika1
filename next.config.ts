@@ -1,12 +1,9 @@
-import type { NextConfig } from "next";
-
-const nextConfig: NextConfig = {
-  /* config options here */
+// next.config.ts
+const nextConfig = {
+  reactStrictMode: true,
+  images: {
+    domains: ["twcjgmiobluhrfpxykhh.supabase.co"], 
+  },
 };
-module.exports ={
-  //...
-  pages: ['app/pages'],
-  //...
-}
 
 export default nextConfig;
