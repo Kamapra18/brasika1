@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import VisitorLogger from "./components/VisitorLogger";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
@@ -19,7 +18,7 @@ export const metadata: Metadata = {
     template: "%s | Brasika Asta Dharma I",
   },
   description: "Website resmi Karang Taruna Brasika Asta Dharma I.",
-  metadataBase: new URL("https://brasika1.vercel.app"), 
+  metadataBase: new URL("https://brasika1.vercel.app"),
   openGraph: {
     title: "Brasika Asta Dharma I",
     description: "Website resmi Karang Taruna Brasika Asta Dharma I.",
@@ -27,7 +26,7 @@ export const metadata: Metadata = {
     siteName: "Brasika Asta Dharma I",
     images: [
       {
-        url: "/logo-p2.png", 
+        url: "/logo-p2.png",
         width: 1200,
         height: 630,
         alt: "Brasika Asta Dharma I",
@@ -62,9 +61,7 @@ export default function RootLayout({
   return (
     <html lang="id">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-          <VisitorLogger />
+        className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         {children}
       </body>
     </html>

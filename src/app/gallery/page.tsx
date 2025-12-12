@@ -1,7 +1,7 @@
-import NavbarSection from "../components/navbar";
-import GallerySection from "../components/galery";
-import Footer from "../components/footer";
-import WhatsAppFloatingButton from "../components/wa";
+import NavbarSection from "../../components/navbar";
+import GallerySection from "../../components/galery";
+import Footer from "../../components/footer";
+import WhatsAppFloatingButton from "../../components/wa";
 
 export default function GallerryPage() {
   return (
@@ -11,7 +11,6 @@ export default function GallerryPage() {
         title="Galeri Lengkap"
         description="Semua dokumentasi kegiatan kami dari berbagai momen penting."
       />
-
       <WhatsAppFloatingButton />
       <Footer />
     </div>
