@@ -15,7 +15,7 @@ export default function ContactSection() {
   return (
     <section
       id="contact"
-      className="py-20 bg-gray-100 text-gray-800 text-center">
+      className="py-20 bg-foreground text-gray-800 text-center">
       <div className="container mx-auto px-6 md:px-12 lg:px-20">
         <motion.h2
           className="text-3xl md:text-4xl font-bold"
@@ -38,7 +38,7 @@ export default function ContactSection() {
           {contacts.map((contact, index) => (
             <motion.div
               key={index}
-              className="bg-white rounded-lg shadow-md p-4"
+              className="bg-background rounded-lg shadow-md p-4"
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: index * 0.2 }}>

@@ -3,7 +3,6 @@ import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { aboutData } from "@/data/DataAbout";
 
-
 type AboutSectionProps = {
   title: string;
   type: "short" | "full";
@@ -21,7 +20,9 @@ export default function AboutSection({ title, type }: AboutSectionProps) {
   }, [type]);
 
   return (
-    <section id="about" className="py-20 bg-white text-gray-800 text-center">
+    <section
+      id="about"
+      className="py-20 bg-[var(--background)] text-gray-800 text-center">
       <div className="container mx-auto px-4 sm:px-6 md:px-12 lg:px-10 max-w-4xl">
         <motion.h2
           initial={{ opacity: 0, y: -30 }}

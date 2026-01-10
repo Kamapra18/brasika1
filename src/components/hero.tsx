@@ -39,12 +39,12 @@ export default function HeroSection() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: false, amount: 0.4 }}
-          className="text-3xl md:text-6xl font-bold text-white drop-shadow-lg uppercase">
+          className="text-3xl md:text-6xl font-bold !text-white drop-shadow-lg uppercase">
           {headline}
         </motion.h1>
 
         <motion.p
-          className="mt-4 text-lg md:text-xl text-gray-200 max-w-2xl mx-auto"
+          className="mt-4 text-lg md:text-xl !text-gray-200 max-w-2xl mx-auto"
           initial={{ opacity: 0, y: -30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
@@ -60,7 +60,7 @@ export default function HeroSection() {
           className="mt-6 flex flex-col md:flex-row items-center justify-center gap-4">
           <a
             href="/about"
-            className="px-6 py-3 bg-blue-900 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 transition-all">
+            className="px-6 py-3 bg-blue-900 !text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 transition-all">
             Tentang Kami
           </a>
 
@@ -71,7 +71,7 @@ export default function HeroSection() {
                 ?.scrollIntoView({ behavior: "smooth" })
             }
             href="#join"
-            className="px-6 py-3 border-2 border-yellow-400 text-yellow-400 font-semibold rounded-lg shadow-md hover:bg-yellow-400 hover:text-gray-800 transition-all">
+            className="px-6 py-3 border-2 border-yellow-400 !text-yellow-400 font-semibold rounded-lg shadow-md hover:bg-yellow-400 hover:!text-gray-800 transition-all">
             Ayo Beraksi
           </a>
         </motion.div>

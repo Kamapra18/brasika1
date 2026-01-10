@@ -4,7 +4,7 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { DataGallery } from "@/data/DataGalery";
-import{ GallerySectionProps } from "@/types/TypeGalery";
+import { GallerySectionProps } from "@/types/TypeGalery";
 
 export default function GallerySection({
   title,
@@ -21,7 +21,7 @@ export default function GallerySection({
   }, [isHomepage]);
 
   return (
-    <section className="py-20 bg-white text-gray-800 text-center">
+    <section className="py-20 bg-background text-gray-800 text-center">
       <div className="container mx-auto px-6 md:px-12 lg:px-20">
         <motion.h2
           className="text-3xl md:text-4xl font-bold"
@@ -60,7 +60,7 @@ export default function GallerySection({
             transition={{ duration: 0.3 }}>
             <a
               href={moreLink}
-              className="px-6 py-3 bg-blue-900 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 transition-all">
+              className="px-6 py-3 bg-blue-900 !text-white font-semibold rounded-lg shadow-md hover:!bg-blue-700 transition-all">
               Lihat Selengkapnya
             </a>
           </motion.div>

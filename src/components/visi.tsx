@@ -19,7 +19,9 @@ export default function VisiSection() {
   }, []);
 
   return (
-    <section id="visi" className="py-20 bg-gray-100 text-gray-800 text-center">
+    <section
+      id="visi"
+      className="py-20 bg-foreground text-gray-800 text-center">
       <motion.h1
         className="text-3xl font-bold mb-3"
         initial={{ opacity: 0, y: -20 }}
@@ -42,7 +44,7 @@ export default function VisiSection() {
 
       <div className="container flex flex-col lg:flex-row mx-auto px-6 md:px-12 lg:px-20">
         <motion.div
-          className="bg-white shadow-lg rounded-lg p-6 m-4 flex-1"
+          className="bg-background shadow-lg rounded-lg p-6 m-4 flex-1"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.4 }}
@@ -52,7 +54,7 @@ export default function VisiSection() {
         </motion.div>
 
         <motion.div
-          className="bg-white shadow-lg rounded-lg p-6 m-4 flex-1"
+          className="bg-background shadow-lg rounded-lg p-6 m-4 flex-1"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.6 }}

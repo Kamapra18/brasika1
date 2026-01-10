@@ -24,12 +24,12 @@ export default function NavbarSection() {
 
   return (
     <>
-      <header className="bg-white px-5 py-3 shadow-md fixed top-0 left-0 w-full z-50">
+      <header className="bg-background px-5 py-3 shadow-md fixed top-0 left-0 w-full z-50">
         <div className="container mx-auto flex justify-between items-center">
           {/* Logo */}
           <div className="flex items-center gap-2">
             <Image
-              className="mix-blend-multiply"
+              className="rounded-full"
               src="/logo-p.jpg"
               alt="logo"
               width={40}
@@ -68,7 +68,7 @@ export default function NavbarSection() {
 
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="md:hidden text-black"
+            className="md:hidden text-[var(--text-primary)]"
             aria-label="Toggle menu">
             {isOpen ? <X size={32} /> : <Menu size={32} />}
           </button>
@@ -78,7 +78,7 @@ export default function NavbarSection() {
       {isOpen && (
         <nav
           ref={menuRef}
-          className="md:hidden flex flex-col items-center gap-4 mt-16 py-4 border-t bg-white shadow-md fixed top-0 left-0 w-full z-40">
+          className="md:hidden flex flex-col items-center gap-4 mt-16 py-4 border-t bg-background shadow-md fixed top-0 left-0 w-full z-40">
           <Link
             href="/"
             className="text-black hover:text-gray-600"

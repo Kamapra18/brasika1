@@ -10,7 +10,9 @@ type ProgramsSectionProps = {
   showAll?: boolean;
 };
 
-export default function ProgramsSection({ showAll = false }: ProgramsSectionProps) {
+export default function ProgramsSection({
+  showAll = false,
+}: ProgramsSectionProps) {
   const [programs, setPrograms] = useState<ProgramType[]>([]);
 
   useEffect(() => {
@@ -22,16 +24,16 @@ export default function ProgramsSection({ showAll = false }: ProgramsSectionProp
   }, [showAll]);
 
   return (
-    <section id="programs" className="py-20 bg-gray-100 text-gray-800 text-center">
-      <div className="container mx-auto px-6 md:px-12 lg:px-20">
-
+    <section
+      id="programs"
+      className="py-20 bg-[var(--foreground)] text-gray-800 text-center">
+      <div className="container  mx-auto px-6 md:px-12 lg:px-20">
         <motion.h2
           className="text-3xl md:text-4xl font-bold"
           initial={{ opacity: 0, y: -30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          viewport={{ once: false, amount: 0.4 }}
-        >
+          viewport={{ once: false, amount: 0.4 }}>
           Kegiatan dan Program
         </motion.h2>
 
@@ -40,22 +42,20 @@ export default function ProgramsSection({ showAll = false }: ProgramsSectionProp
           initial={{ opacity: 0, y: -30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          viewport={{ once: false, amount: 0.4 }}
-        >
-          Berbagai kegiatan dan program kami bertujuan untuk meningkatkan keterampilan,
-          kepemimpinan, serta kepedulian sosial para pemuda.
+          viewport={{ once: false, amount: 0.4 }}>
+          Berbagai kegiatan dan program kami bertujuan untuk meningkatkan
+          keterampilan, kepemimpinan, serta kepedulian sosial para pemuda.
         </motion.p>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-10">
           {programs.map((program, index) => (
             <motion.div
               key={program.id}
-              className="bg-white rounded-lg shadow-md overflow-hidden"
+              className="bg-background rounded-lg shadow-md overflow-hidden"
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: index * 0.2 }}
-              viewport={{ once: false, amount: 0.3 }}
-            >
+              viewport={{ once: false, amount: 0.3 }}>
               <Image
                 src={program.image}
                 alt={program.title}
@@ -76,13 +76,11 @@ export default function ProgramsSection({ showAll = false }: ProgramsSectionProp
           <div className="mt-10">
             <a
               href="/about"
-              className="inline-block px-6 py-3 border-2 border-black text-black font-semibold rounded-lg hover:bg-black hover:text-white transition"
-            >
+              className="inline-block px-6 py-3 border-2 border-text-primary text-text-primary font-semibold rounded-lg hover:bg-background hover:text-text-primary transition">
               Lihat Semua
             </a>
           </div>
         )}
-
       </div>
     </section>
   );

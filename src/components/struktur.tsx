@@ -25,7 +25,7 @@ export default function Struktur() {
   return (
     <section
       id="struktur"
-      className="relative py-20 bg-white text-gray-800 text-center overflow-hidden">
+      className="relative py-20 bg-background text-gray-800 text-center overflow-hidden">
       <div className="container mx-auto px-6 md:px-12 lg:px-20">
         <motion.h2
           className="text-4xl md:text-4xl font-extrabold mb-12 text-gray-900"
