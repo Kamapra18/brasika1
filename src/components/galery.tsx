@@ -72,7 +72,6 @@ export default function GallerySection({
         )}
       </div>
 
-      {/* Lightbox / Full screen image view */}
       <AnimatePresence>
         {selectedImage && (
           <motion.div
@@ -80,13 +79,35 @@ export default function GallerySection({
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             onClick={() => setSelectedImage(null)}
-            className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/90 cursor-zoom-out">
+            className="fixed inset-0 z-[100] flex items-center justify-center p-4 bg-black/95 cursor-zoom-out">
+            {/* Close Button - Fixed to top right of viewport */}
+            <button
+              className="fixed top-6 right-6 z-[110] text-white/80 hover:text-white transition-colors bg-white/10 hover:bg-white/20 p-2 rounded-full backdrop-blur-sm"
+              onClick={(e) => {
+                e.stopPropagation();
+                setSelectedImage(null);
+              }}>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-8 w-8"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2.5}
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              </svg>
+            </button>
+
             <motion.div
-              initial={{ scale: 0.8, opacity: 0 }}
+              initial={{ scale: 0.9, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
-              exit={{ scale: 0.8, opacity: 0 }}
+              exit={{ scale: 0.9, opacity: 0 }}
               transition={{ type: "spring", damping: 25, stiffness: 300 }}
-              className="relative max-w-7xl max-h-[90vh] w-full h-full"
+              className="relative w-full h-full max-w-6xl max-h-[85vh]"
               onClick={(e) => e.stopPropagation()}>
               <Image
                 src={selectedImage}
@@ -95,23 +116,6 @@ export default function GallerySection({
                 className="object-contain"
                 priority
               />
-              <button
-                className="absolute -top-12 right-0 md:-right-12 text-white p-2 hover:text-gray-300 transition-colors"
-                onClick={() => setSelectedImage(null)}>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-8 w-8"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor">
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M6 18L18 6M6 6l12 12"
-                  />
-                </svg>
-              </button>
             </motion.div>
           </motion.div>
         )}
