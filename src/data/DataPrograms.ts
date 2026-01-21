@@ -29,7 +29,7 @@ export const DataProgram: ProgramType[] = [
     id: "5",
     title: "SeGaap",
     description:
-      "Membuat Sekee Gong STT bernama Sekee Gong Alit-Alit Pekandelan.",
+      "Membuat Sekee Gong anak-anak bernama Sekee Gong Alit-Alit Pekandelan.",
     image: "/program/program5.jpeg",
   },
   {

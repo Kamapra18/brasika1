@@ -4,4 +4,8 @@ export type TypeKepengurusan = {
   position: "ketua" | "wakil" | "sekretaris" | "bendahara";
   photo_url: string;
   phone?: string;
+  instagram?: string;
+  facebook?: string;
+  tiktok?: string;
+  motto?: string;
 };

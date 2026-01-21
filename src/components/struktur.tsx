@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { motion } from "framer-motion";
 import { DataKepengurusan } from "@/data/DataKepengurusan";
 import { TypeKepengurusan } from "@/types/TypeKepengurusan";
@@ -42,7 +43,9 @@ export default function Struktur() {
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}>
-            <div className="relative p-3 bg-white rounded-full shadow-lg border-4 border-blue-900 hover:scale-105 transition-transform">
+            <Link
+              href={`/about/detailProfile?id=${ketua.id}`}
+              className="relative p-3 bg-white rounded-full shadow-lg border-4 border-blue-900 hover:scale-105 transition-all group overflow-hidden">
               <Image
                 src={ketua.photo_url}
                 alt={ketua.name}
@@ -50,7 +53,12 @@ export default function Struktur() {
                 height={140}
                 className="rounded-full object-cover"
               />
-            </div>
+              <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center rounded-full">
+                <span className="text-white text-xs font-bold bg-black/40 px-2 py-1 rounded">
+                  Lihat Profil
+                </span>
+              </div>
+            </Link>
             <h3 className="mt-4 text-2xl font-bold">{ketua.name}</h3>
             <p className="text-gray-600 uppercase font-semibold">Ketua</p>
           </motion.div>
@@ -63,7 +71,9 @@ export default function Struktur() {
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}>
-            <div className="relative p-3 bg-white rounded-full shadow-lg border-4 border-yellow-500 hover:scale-105 transition-transform">
+            <Link
+              href={`/about/detailProfile?id=${wakil.id}`}
+              className="relative p-3 bg-white rounded-full shadow-lg border-4 border-yellow-500 hover:scale-105 transition-all group overflow-hidden">
               <Image
                 src={wakil.photo_url}
                 alt={wakil.name}
@@ -71,7 +81,12 @@ export default function Struktur() {
                 height={130}
                 className="rounded-full object-cover"
               />
-            </div>
+              <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center rounded-full">
+                <span className="text-white text-xs font-bold bg-black/40 px-2 py-1 rounded">
+                  Lihat Profil
+                </span>
+              </div>
+            </Link>
             <h3 className="mt-4 text-2xl font-bold">{wakil.name}</h3>
             <p className="text-gray-600 uppercase font-semibold">Wakil Ketua</p>
           </motion.div>
@@ -85,7 +100,9 @@ export default function Struktur() {
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.4 }}>
-              <div className="relative p-3 bg-white rounded-full shadow-lg border-4 border-gray-800 hover:scale-105 transition-transform">
+              <Link
+                href={`/about/detailProfile?id=${sekre.id}`}
+                className="relative p-3 bg-white rounded-full shadow-lg border-4 border-gray-800 hover:scale-105 transition-all group overflow-hidden">
                 <Image
                   src={sekre.photo_url}
                   alt={sekre.name}
@@ -93,7 +110,12 @@ export default function Struktur() {
                   height={120}
                   className="rounded-full object-cover"
                 />
-              </div>
+                <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center rounded-full">
+                  <span className="text-white text-xs font-bold bg-black/40 px-2 py-1 rounded">
+                    Lihat Profil
+                  </span>
+                </div>
+              </Link>
               <h3 className="mt-4 text-xl font-bold">{sekre.name}</h3>
               <p className="text-gray-600 uppercase font-semibold">
                 Sekretaris
@@ -107,7 +129,9 @@ export default function Struktur() {
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.6 }}>
-              <div className="relative p-3 bg-white rounded-full shadow-lg border-4 border-blue-900 hover:scale-105 transition-transform">
+              <Link
+                href={`/about/detailProfile?id=${bendes.id}`}
+                className="relative p-3 bg-white rounded-full shadow-lg border-4 border-blue-900 hover:scale-105 transition-all group overflow-hidden">
                 <Image
                   src={bendes.photo_url}
                   alt={bendes.name}
@@ -115,7 +139,12 @@ export default function Struktur() {
                   height={120}
                   className="rounded-full object-cover"
                 />
-              </div>
+                <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center rounded-full">
+                  <span className="text-white text-xs font-bold bg-black/40 px-2 py-1 rounded">
+                    Lihat Profil
+                  </span>
+                </div>
+              </Link>
               <h3 className="mt-4 text-xl font-bold">{bendes.name}</h3>
               <p className="text-gray-600 uppercase font-semibold">Bendahara</p>
             </motion.div>
