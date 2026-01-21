@@ -10,7 +10,7 @@ export default function ContactContainer() {
     <div>
       <section className="min-h-screen flex flex-col justify-center items-center bg-foreground px-4 py-10">
         <motion.h1
-          className="text-4xl font-bold text-gray-800 mb-8"
+          className="text-4xl font-bold text-text-primary mb-8"
           initial={{ opacity: 0, y: -40 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}

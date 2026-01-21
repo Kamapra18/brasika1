@@ -130,9 +130,13 @@ function ProfileContent() {
                         <p className="text-[10px] text-text-secondary uppercase font-bold tracking-widest">
                           Facebook
                         </p>
-                        <p className="text-base font-semibold text-text-primary">
-                          {person.facebook}
-                        </p>
+                        <a
+                          href={`https://facebook.com/${person.facebook}`}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-base font-semibold text-text-primary hover:text-pink-600 transition-colors">
+                          @{person.facebook}
+                        </a>
                       </div>
                     </div>
                   )}

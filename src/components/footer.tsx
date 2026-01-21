@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { FaFacebook, FaInstagram, FaWhatsapp } from "react-icons/fa";
+import { FaFacebook, FaInstagram, FaTiktok, FaWhatsapp } from "react-icons/fa";
 import { motion } from "framer-motion";
 
 export default function Footer() {
@@ -98,6 +98,12 @@ export default function Footer() {
             target="_blank">
             <FaFacebook size={20} />
           </a>
+          <a
+            href="https://www.tiktok.com/@st.brasika1?_r=1&_t=ZS-93G3msz4mvA"
+            className="!text-gray-200 hover:!text-black"
+            target="_blank">
+            <FaTiktok size={20} />
+          </a>
         </motion.div>
 
         {/* Garis & Copyright */}
@@ -116,7 +122,9 @@ export default function Footer() {
           transition={{ duration: 0.6, delay: 1 }}
           viewport={{ once: false }}>
           <p className="text-center text-xs !text-gray-300">
-            &copy; 2025 ST BRASIKA I. All Rights Reserved.
+            &copy; {new Date().getFullYear()} ST BRASIKA I. All Rights Reserved.
+            <br />
+            <span className="opacity-50">Crafted by Kamapra </span>
           </p>
         </motion.div>
       </div>

@@ -1,29 +1,44 @@
-import {
-  FaMapMarkerAlt,
-  FaPhoneAlt,
-  FaEnvelope,
-  FaGlobe,
-} from "react-icons/fa";
+import { FaMapMarkedAlt, FaDirections } from "react-icons/fa";
 
 export default function ContactInfo() {
+  const googleMapsUrl =
+    "https://www.google.com/maps/dir/?api=1&destination=-8.499671,115.368841";
+
   return (
-    <div className="w-full md:w-1/2 text-gray-900 font-semibold text-lg md:pl-6 mt-4 md:mt-0 space-y-4">
-      <p className="flex items-center gap-3 hover:text-gray-700 transition-all">
-        <FaMapMarkerAlt className="text-yellow-500 text-3xl" />
-        Jl. Arjuna, Br. Pekandelan, Nyalian, Kec. Banjarangkan, Kabupaten
-        Klungkung, Bali
-      </p>
-      <p className="flex items-center gap-3 hover:text-blue-500 transition-all">
-        <FaPhoneAlt className="text-yellow-500 text-2xl" /> +62 857-3912-2445
-      </p>
-      <p className="flex items-center gap-3 hover:text-yellow-500 transition-all">
-        <FaEnvelope className="text-yellow-500 text-2xl" /> brasika1@gmail.com
-      </p>
-      <div>
-        <p className="flex items-center gap-3 hover:text-blue-500 transition-all">
-          <FaGlobe className="text-yellow-500 text-2xl" /> Media Sosial
+    <div className="w-full md:w-1/2 text-text-primary md:pl-8 mt-6 md:mt-0 flex flex-col justify-center">
+      {/* Judul Kecil */}
+      <div className="flex items-center gap-2 mb-3 text-text-primary/70">
+        <FaMapMarkedAlt className="text-xl" />
+        <span className="font-bold uppercase tracking-wider text-sm">
+          Lokasi Kami
+        </span>
+      </div>
+
+      {/* Deskripsi Naratif */}
+      <h3 className="text-3xl font-bold mb-4 leading-tight">
+        Kunjungi Balai Banjar Pekandelan
+      </h3>
+
+      <div className="space-y-4 mb-8">
+        <p className="text-text-secondary font-semibold leading-relaxed">
+          Jl. Arjuna, Br. Pekandelan, Desa Nyalian, Kec. Banjarangkan, Kabupaten
+          Klungkung, Bali.
         </p>
       </div>
+
+      {/* Button Action */}
+      <a
+        href={googleMapsUrl}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="inline-flex items-center justify-center gap-3 bg-primary text-background hover:bg-transparent hover:text-text-primary border-2 border-text-primary font-bold py-3 px-8 rounded-xl transition-all shadow-lg hover:shadow-xl active:scale-95 w-fit">
+        <FaDirections className="text-xl" />
+        Petunjuk Rute Navigasi
+      </a>
+
+      <p className="mt-4 text-xs text-text-secondary/60 italic">
+        *Klik tombol di atas untuk membuka navigasi di Google Maps.
+      </p>
     </div>
   );
 }
