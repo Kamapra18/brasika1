@@ -7,6 +7,7 @@ import GallerySection from "../components/galery";
 import ContactContainer from "../components/contact/container";
 import WhatsAppFloatingButton from "../components/wa";
 import Struktur from "@/components/struktur";
+import HeritageSection from "@/components/heritage";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       <HeroSection />
 
       <AboutSection title="Tentang Kami" type="short" />
+      <HeritageSection />
       <Struktur />
 
       <ProgramsSection showAll={false} />

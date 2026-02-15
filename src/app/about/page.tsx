@@ -5,7 +5,7 @@ import ProgramsSection from "../../components/programs";
 import Struktur from "../../components/struktur";
 import Footer from "../../components/footer";
 import WhatsAppFloatingButton from "../../components/wa";
-
+import HeritageSection from "@/components/heritage";
 
 export default function AboutPage() {
   return (
@@ -13,7 +13,7 @@ export default function AboutPage() {
       <NavbarSection />
       <AboutSection title="Tentang Kami" type="full" />
 
-      <p></p>
+      <HeritageSection />
       <VisiSection />
       <Struktur />
 
