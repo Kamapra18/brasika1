@@ -56,13 +56,16 @@ export default function ProgramsSection({
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: index * 0.2 }}
               viewport={{ once: false, amount: 0.3 }}>
-              <Image
-                src={program.image}
-                alt={program.title}
-                width={400}
-                height={256}
-                className="w-full h-64 object-cover"
-              />
+              {/* Container Gambar dengan Aspect Ratio tetap */}
+              <div className="relative w-full aspect-video overflow-hidden">
+                <Image
+                  src={program.image}
+                  alt={program.title}
+                  fill
+                  className="object-cover hover:scale-105 transition-transform duration-500"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 33vw"
+                />
+              </div>
 
               <div className="p-4">
                 <h3 className="text-xl font-semibold">{program.title}</h3>

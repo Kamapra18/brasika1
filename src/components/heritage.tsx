@@ -9,22 +9,23 @@ export default function HeritageSection() {
         <div className="lg:w-1/2 mb-10 lg:mb-0 relative group">
           <div className="absolute -top-4 -left-4 w-24 h-24 bg-yellow-600/20 rounded-full blur-2xl group-hover:bg-yellow-600/40 transition duration-500"></div>
 
-          <div className="relative overflow-hidden rounded-2xl shadow-2xl">
+          {/* Container Gambar dengan Aspect Ratio Terjaga */}
+          <div className="relative overflow-hidden rounded-2xl shadow-2xl aspect-[4/3] w-full">
             <Image
-              width={800}
-              height={600}
+              fill
               src="/program/program10.jpeg"
               alt="Gong Baleganjur"
-              className="grayscale hover:grayscale-0 transition duration-700 object-cover w-full h-[450px] scale-100 hover:scale-105"
+              className="grayscale hover:grayscale-0 transition duration-700 object-cover scale-100 hover:scale-105"
+              sizes="(max-width: 768px) 100vw, 50vw"
             />
           </div>
 
-          {/* Label Floating */}
+          {/* Label Floating - Menggunakan entitas HTML untuk tanda petik */}
           <div className="absolute -bottom-6 -right-6 bg-yellow-600 p-6 rounded-lg hidden md:block shadow-xl transform group-hover:-translate-y-2 transition duration-500">
             <p
-              className=" font-bold text-xl italic m-0"
+              className="font-bold text-xl italic m-0"
               style={{ color: "var(--text-primary)" }}>
-              "Ngajegang Budaya"
+              &ldquo;Ngajegang Budaya&rdquo;
             </p>
           </div>
         </div>
@@ -43,9 +44,9 @@ export default function HeritageSection() {
 
           <div className="space-y-6">
             <p className="text-lg leading-relaxed italic border-l-4 border-yellow-600/30 pl-4 text-[var(--text-secondary)]">
-              “Perjuangan menghadirkan Gong Baleganjur adalah langkah menjaga
-              agar anak cucu kita tetap bisa menabuh budaya sendiri, bukan hanya
-              menjadi saksi bisu di tanah kelahirannya.”
+              &ldquo;Perjuangan menghadirkan Gong Baleganjur adalah langkah
+              menjaga agar anak cucu kita tetap bisa menabuh budaya sendiri,
+              bukan hanya menjadi saksi bisu di tanah kelahirannya.&rdquo;
             </p>
             <p className="text-base md:text-lg leading-relaxed text-[var(--text-secondary)]">
               Mewujudkan seperangkat alat musik ini adalah ikhtiar kami untuk
